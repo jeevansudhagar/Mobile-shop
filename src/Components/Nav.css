@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+}
+
+/* Top Header */
+.header .top-header {
+    display: flex;
+    padding: 10px;
+    background-color: #f6f7f8;
+
+}
+
+.header .top-header .icon {
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 19px;
+}
+
+.header .top-header .info p {
+    margin-left: 10px;
+    color: #8a8a8a;
+    font-size: 14px;
+}
+
+/* Mid Header */
+.header .mid-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .mid-header .logo img {
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.header .mid-header .search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header .mid-header .search-box input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 250px;
+    background: #f6f7f8;
+}
+
+.header .mid-header .search-box button {
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #cd1e76;
+    background: #cd1e76;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.header .mid-header .search-box button:hover {
+    background: #fed700;
+    color: #cd1e76;
+}
+
+.header .mid-header .user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header .mid-header .user .icon .btn button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+/* Last Header */
+.header .last-header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #232323;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .last-header .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.header .last-header .user-profile .icon {
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.header .last-header .user-profile .info {
+    margin-left: 10px;
+}
+
+.header .last-header .user-profile .info h2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .last-header .user-profile .info p {
+    color: #ababab;
+    font-size: 14px;
+}
+
+.header .last-header .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.header .last-header .nav ul li {
+    list-style: none;
+}
+
+.header .last-header .nav ul .link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header .last-header .nav ul .link:hover {
+    color: #fed700;
+}
+
+.header .last-header .offer {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #fed700;
+    text-align: center;
+}
+
+.header .last-header .offer p {
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */  
+@media (max-width: 768px) {
+
+    
+    .header .mid-header {
+        flex-direction: column;
+        
+        
+    }
+
+    .header .mid-header .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header .mid-header .search-box input {
+        width: 50%;
+    }
+
+    .header .mid-header .search-box button {
+        width: 10%;
+    }
+
+    .header .last-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .last-header .user-profile,
+    .header .last-header .nav ul {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .header .last-header .nav ul {
+        flex-direction: row;
+    }
+
+    .header .last-header .nav ul .link {
+        margin-bottom: 10px;
+    }
+
+    .header .last-header .offer {
+        align-self: flex-start;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .header .mid-header .search-box input {
+        width:100%;
+    }
+
+    .header .mid-header .search-box button {
+        width: 20%;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .header .last-header .user-profile .info h2 {
+        font-size: 16px;
+    }
+
+    .header .last-header .offer {
+        width: 100%;
+        text-align: center;
+        
+    
+    }
+}

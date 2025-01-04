@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contact{
+    
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    background: #f6f6f6;
+    padding: 20px 30px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    border: 3px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    margin: 0px auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.contact .container{
+    padding: 10px 20px;
+    max-width: 100%;
+}
+.contact .container .form h2{
+    color: #cd1e7c;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.contact .container .form .box1{
+    max-width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.box1 .label h4{
+    margin-left: 40px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+ .box1 .label .input{
+    
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom:  2px solid black;
+    padding: 10px 20px;
+}
+.box1 .label .input textarea{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom:  2px solid black;
+    padding: 10px 20px;
+    resize: none;
+}
+
+ .sub-btn{
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    background: #fed700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .box1 .label h4 {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .box1 .label .input {
+        padding: 8px 15px;
+        width: 100%;
+    }
+
+    .sub-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px 15px;
+    }
+
+    .contact .container .form h2 {
+        font-size: 16px;
+    }
+
+    .box1 {
+        flex-direction: column;
+    }
+
+    .box1 .label h4 {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .box1 .label .input,
+    .box1 .label .input textarea {
+        width: 100%;
+    }
+
+    .sub-btn {
+        padding: 8px;
+        font-size: 14px;
+        width: 50%;
+    
+    }
+}
