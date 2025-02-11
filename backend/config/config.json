@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "jeeva",
+    "password": "Jeeva",
+    "database": "mobileshop",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "jeeva",
+    "password": "Jeeva",
+    "database": "mobileshop",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "jeeva",
+    "password": "Jeeva",
+    "database": "mobileshop",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
